@@ -6,13 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Horror Story - Text Adventure</title>
     <link rel="stylesheet" href="gore.css">
-</head>
+ </head>
 <body>
-    
+<audio class="music" loop></audio>
 
+    <!-- 
 <img src="basement.jpg" id="BasementCreep"></img>
 <h1>Are you willing to play?</h1>
 <h2></h2>
+-->
+
+
+
+<!-- Start Menu -->
+<input type="button" id="startGame" value="Are you ready to step into the darkness?" onclick="randomHero(); randomEnemy();">
+<!-- end -->
+
+
+
+<h1 id="heroText"></h1>
+<h1 id="enemyText"></h1>
+
+
+<br>
+
+<h1 id="heroHP"></h1>
+<h1 id="enemyHP"></h1>
+
+<br>
+<input type="button" id="startBattle" style= "text-align:center" value="Begin The Battle" onclick="heroRoll(); enemyRoll(); firstBattle();" >
+
 
 
     <script src="jump.js"></script>
